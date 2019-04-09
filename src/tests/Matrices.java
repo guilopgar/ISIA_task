@@ -28,6 +28,15 @@ public class Matrices {
         } catch (DimensionesIncompatibles ex) {
             ex.printStackTrace();
         }
+        System.out.println("Test inversa:");
+        Matriz m5 = new Matriz(5, 5, true);
+        System.out.println(m5);
+        try {
+            System.out.println(Matriz.matrizInversa(m5));
+
+        } catch (DimensionesIncompatibles ex) {
+            ex.printStackTrace();
+        }
     }
     
 }
