@@ -17,6 +17,17 @@ public class Matrices {
         } catch (DimensionesIncompatibles ex) {
             ex.printStackTrace();
         }
+        
+        System.out.println("Test Multiplicar:");
+        Matriz m3 = new Matriz(3, 4, true);
+        System.out.println(m3);
+        Matriz m4 = new Matriz(4, 3, true);
+        System.out.println(m4);
+        try {
+            System.out.println(Matriz.multiplicarDosMatrices(m3, m4));
+        } catch (DimensionesIncompatibles ex) {
+            ex.printStackTrace();
+        }
     }
     
 }
